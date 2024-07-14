@@ -44,15 +44,6 @@ const Player = () => {
       .catch((err) => console.log(err));
   };
 
-  const searchArtist = artists => {
-    const query = artists;
-    axios
-      .get(`https://saavn.dev/api/search/artists?query=${query}`)
-      .then((data) => {
-        console.log(data);
-      })
-      .catch((err) => console.log(err));
-  };
 
   const onChange = useCallback((event) => {
     let query = event.target.value;
