@@ -9,3 +9,9 @@ export default function getDonnees() {
   //  On retourne les données
   return donnes;
 }
+
+export default function getArtists() {
+  const promise = Axios.get("https://saavn.dev/api/search/artists?query=Adele");
+  const donnes = promise.then((response)=> response.data);
+  return donnes;
+}
