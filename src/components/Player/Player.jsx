@@ -50,7 +50,6 @@ const Player = () => {
       .get(`https://saavn.dev/api/search/artists?query=${query}`)
       .then((data) => {
         console.log(data);
-        });
       })
       .catch((err) => console.log(err));
   };
